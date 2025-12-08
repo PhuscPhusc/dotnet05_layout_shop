@@ -1,0 +1,82 @@
+/*
+    4 giá trị mặc định của position
+    - static: giá trị mặc định(các phần từ ở yên tại vị trí
+    sinh ra) = giá trị mặc định khi tạo layout HTML.
+    - relative: phần tử được nhấc lên so với gốc tọa độ tại nơi 
+    đặt phần tử lúc ban đầu được khởi tạo(có thẻ di chuyển bằng 
+    left, right, top, bottom).
+    - absolute: phần tử lấy gốc tọa độ tại vị trí so với thẻ cha
+    có position gần nhất(Nếu không có thẻ cha nào có position
+    thì sẽ so với gốc tọa độ của cửa sổ màn hình).
+    - fixed: gốc tọa độ luôn theo màn hình máy tính - Thường ứng dụng làm quản cáo chạy giữa màn hình - Quảng Cáo - Header
+
+
+ */
+.parent {
+    width: 800px;
+    height: 2800px;
+    background: pink;
+    position: relative;
+}
+.item1 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+.item2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    bottom: 60px;
+ 
+}
+.item3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.position_fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: flex; /*Giúp class .item-fixed vào giữa màn hình web*/
+    justify-content: center;/*Giúp class .item-fixed vào giữa màn hình web*/
+    align-items: center;/*Giúp class .item-fixed vào giữa màn hình web*/
+}
+.position_fixed .item-fixed {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(150, 7, 31);
+    /* 
+    Không cần chỉnh thằng con vì thằng con theo flex-box thằng cha nên nó nằm trên thằng cha mà thằng cha là fixed => thằng con là fixed
+    position: fixed;
+    right: 0;
+    bottom: 0; */
+}
+
+/* CSS chuông thông báo */
+.notify {
+    position: relative;/*Bật position lên để 2 thằng con dưới chỉ chạy trong notify mà không chạy ra giao diện web được*/
+}
+.fa-bell {
+    font-size: 60px;
+    color: aqua;
+}
+.notify::after {
+    content: "99+";
+    position: absolute;
+    background: red;
+    color: white;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    padding: auto;
+    right: 735px;
+}

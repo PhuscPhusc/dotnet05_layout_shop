@@ -1,0 +1,41 @@
+/*
+    Nguyên tắc xác định vị trí
+    Tính từ trên xuống dưới
+    Tính từ trái sang phải
+ */
+.grid {
+    background: orange;
+    width: 1000px;
+    height: 1000px;
+    display: grid;
+    /*Khi kích lưới grid lên thì tự động có thuộc tính gap*/
+
+    /* Thống nhất grid là thuộc tính column luôn */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*fr: phần => 1fr: 1 phần*/
+    gap: 8px;/*Khoảng cách giữa các cột*/
+}
+
+.item {
+    background-color: green;
+}
+
+.item1 {
+    /* Công thức tính chia cột
+    grid-column = n / span m
+    n: vị trí hiện tại của cột
+    m: số cột chiếm
+     */
+    grid-column: 1 / span 2;
+
+    /* Công thức tính chia dòng
+    grid-row = n / span m
+    n: vị trí dòng
+    m: số dòng chiếm
+     */
+    grid-row: 1 / span 2;
+}
+.item10 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+}

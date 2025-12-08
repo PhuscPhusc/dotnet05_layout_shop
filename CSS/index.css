@@ -1,0 +1,761 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Khoảng cách giữa các thẻ trong HTML*/
+}
+
+
+
+
+/* CSS header */
+/* CSS container1 */
+/* CSS hotline */
+.header {
+    /* background: orange; */
+}
+
+.header .container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.header .container1 .hotline label {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(238, 117, 137);
+}
+
+.header .container1 .hotline span {
+    font-size: 13px;
+    font-weight: normal;
+    color: pink;
+}
+
+.header .container1 .hotline a {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(221, 50, 50);
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.header .container1 .hotline a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    transition: all 1s;
+}
+
+/* CSS web_menu_nav */
+.header .container1 .web_menu_nav a {
+    font-size: 14px;
+    font-weight: normal;
+    color: pink;
+    text-decoration: none;
+    border-right: 1px solid pink;
+    margin: 0px;
+    padding: 0px 8px;
+    transition: all 1s;
+}
+
+.header .container1 .web_menu_nav a:last-child {
+    border: none;
+}
+
+.header .container1 .web_menu_nav a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(247, 138, 156);
+    transition: all 1s;
+}
+
+/* CSS container2 */
+/* CSS logo_web */
+.header .container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .container2 .logo_web {
+    font-size: 25px;
+    font-weight: bold;
+    color: pink;
+}
+
+.header .container2 .logo_web label {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background: rgb(207, 64, 88);
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.header .container2 .cart {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(242, 181, 191);
+}
+
+.header .container2 .cart label {
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(237, 59, 104);
+}
+
+.header .container2 .cart i {
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(237, 59, 104);
+}
+
+
+
+
+/* CSS menu_nav */
+/* CSS container3 */
+.menu_nav {
+    /* background: orange; */
+}
+
+.menu_nav .container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    margin: 0px auto;
+    background: rgb(228, 33, 65);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+}
+
+.menu_nav .container3 .list_item_nav li {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 2px solid rgb(232, 156, 169);
+    padding: 0px 10px;
+    height: 40px;
+    /*Để đường viền border bên phải kéo dài bằng với chiều rộng của background class="container3"*/
+}
+
+.menu_nav .container3 .list_item_nav li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(238, 151, 166);
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.menu_nav .container3 .list_item_nav li:hover {
+    background: rgb(152, 34, 54);
+    transition: all 1s;
+
+}
+
+/* CSS search_form */
+.menu_nav .container3 .search_form input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 5px;
+    border-color: white;
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(245, 45, 78);
+}
+
+.menu_nav .container3 .search_form input::placeholder {
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(251, 125, 146);
+    padding-left: 5px;
+}
+
+.menu_nav .container3 .search_form .fa-crosshairs {
+    position: relative;
+    right: 30px;
+    top: 2px;
+    color: rgb(251, 125, 146);
+}
+
+
+
+
+/* CSS categories*/
+/* CSS container4 */
+.categories {
+    /* background: orange; */
+    width: 80%;
+    margin: 0px auto;
+}
+
+.categories .container4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    /*Khoảng cách giữa categories_menu và carousel. Đề yêu cầu cách*/
+}
+
+/* CSS categories_menu */
+.categories .container4 .categories_menu {
+    width: 25%;
+    border: 2px solid rgb(250, 196, 205);
+}
+
+.categories .container4 .categories_menu h3 {
+    background: palevioletred;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    /* text-transform: uppercase; Viết in hoa toàn bộ ký tự*/
+}
+
+.categories .container4 .categories_menu ul.list_cate {
+    padding: 10px;
+}
+
+.categories .container4 .categories_menu ul.list_cate li.item_cate {
+    font-size: 12px;
+    color: rgb(239, 82, 108);
+    margin: 10px 0;
+    list-style: none;
+    padding: 5px;
+    cursor: pointer
+        /*Chỉnh hiệu ứng con trỏ chuột*/
+    ;
+}
+
+.categories .container4 .categories_menu .list_cate .item_cate .list_child {
+    /* display: none; không dùng vì không kết hợp được với transition */
+    /* Ẩn đi bằng cách ép chiều cao về 0 và cho thuộc tính overflow = hidden: ẩn đi thẻ con tràn khỏi thẻ cha */
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.categories .container4 .categories_menu .list_cate .item_cate:hover .list_child {
+    /* display: block; không dùng vì không kết hợp được với transition*/
+    height: 60px;
+    overflow: initial;
+    margin: 6px;
+    transition: all 1s;
+}
+
+.categories .container4 .categories_menu .list_cate .item_cate .list_child li {
+    list-style: none;
+    margin: 4px;
+}
+
+.categories .container4 .categories_menu .list_cate .item_cate .list_child li a {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(250, 64, 95);
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+/* CSS carousel */
+.categories .container4 .carousel {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(250, 196, 205);
+    height: 490px;
+
+}
+
+.categories .container4 .carousel img {
+    height: 310px;
+    width: auto;
+}
+
+.categories .container4 .carousel .content {
+    /* background-color: pink; */
+    margin-left: 10px;
+}
+
+.categories .container4 .carousel .content h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(253, 107, 131);
+}
+
+.categories .container4 .carousel .content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(253, 107, 131);
+}
+
+.categories .container4 .carousel .content h3 {
+    font-size: 25px;
+    font-weight: normal;
+    color: rgb(248, 162, 176);
+}
+
+.categories .container4 .carousel .content .p_text {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(245, 23, 60);
+}
+
+.categories .container4 .carousel .content .btn_shop {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    /* Thêm thuộc tính CSS cho button */
+    padding: 10px;
+    background-color: rgb(250, 16, 55);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.categories .container4 .carousel .content .btn_shop:hover {
+    background-color: rgb(177, 6, 34);
+    transition: all 2s;
+}
+
+
+
+
+/* CSS new_products */
+/* CSS container5 */
+.new_products {
+    /* background: orange; */
+}
+
+.new_products .container5 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.new_products .container5 .title {
+    border: 2px solid rgb(247, 132, 151);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new_products .container5 .title .title_new_products {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(248, 20, 58);
+}
+
+.new_products .container5 .title a {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(248, 20, 58);
+    text-decoration: none;
+}
+
+.new_products .container5 .title a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(252, 87, 114);
+    text-decoration: solid
+}
+
+/* CSS gird */
+.new_products .container5 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.new_products .container5 .grid .item .card img {
+    /* Vì hình quá lớn nên phải thêm đoạn CSS nay để giữ hình không bị tràn */
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.new_products .container5 .grid .item {
+    border: 2px solid pink;
+}
+
+.new_products .container5 .grid .item .card .content {
+    margin: auto;
+}
+
+.new_products .container5 .grid .item .card .content hr {
+    width: 80%;
+    margin: 5px auto;
+    background-color: rgb(252, 61, 93);
+    height: 2px;
+}
+
+.new_products .container5 .grid .item .card .content .product_name {
+    width: 80%;
+    margin: auto;
+}
+
+.new_products .container5 .grid .item .card .content .price_cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.new_products .container5 .grid .item .card .content .price_cart .btn_cart {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(250, 16, 55);
+    border: none;
+    border-radius: 15px;
+    width: 75px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.new_products .container5 .grid .item .card .content .price_cart .product_price {
+    font-weight: 400;
+}
+
+.new_products .container5 .grid .item .card .content .price_cart .btn_cart:hover {
+    background-color: rgb(177, 6, 34);
+    transition: all 1s;
+}
+
+
+
+/* CSS feature products */
+/* CSS container6 */
+.feature_products {
+    /* background-color: orange; */
+}
+
+.feature_products .container6 {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.feature_products .container6 .title_feature {
+    border: 2px solid rgb(247, 132, 151);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature_products .container6 .title_feature .title_feature_products {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(248, 20, 58);
+}
+
+.feature_products .container6 .title_feature a {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(248, 20, 58);
+    text-decoration: none;
+}
+
+.feature_products .container6 .title_feature a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(252, 87, 114);
+    text-decoration: solid
+}
+
+/* CSS grid */
+.feature_products .container6 .grid {
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0px auto;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.feature_products .container6 .grid .item .cart img {
+    max-width: 100%;
+    /*Giữ cho hình không bị tràn khỏi thẻ cha*/
+    height: auto;
+}
+
+.feature_products .container6 .grid .item {
+    border: 2px solid pink;
+}
+
+.feature_products .container6 .grid .item .cart .content {
+    margin: auto;
+}
+
+.feature_products .container6 .grid .item .cart .content .feature_product_name {
+    width: 80%;
+    margin: auto;
+}
+
+.feature_products .container6 .grid .item .cart .content hr {
+    width: 80%;
+    background-color: rgb(252, 61, 93);
+    height: 2px;
+    margin: 5px auto;
+}
+
+.feature_products .container6 .grid .item .cart .content .feature_product_price_cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.feature_products .container6 .grid .item .cart .content .feature_product_price_cart .feature_product_price {
+    font-weight: 400;
+}
+
+.feature_products .container6 .grid .item .cart .content .feature_product_price_cart .btn_add_cart {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(250, 16, 55);
+    border: none;
+    border-radius: 15px;
+    width: 75px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.feature_products .container6 .grid .item .cart .content .feature_product_price_cart .btn_add_cart:hover {
+    background-color: rgb(177, 6, 34);
+    transition: all 1s;
+}
+
+
+
+/* CSS footers */
+/* CSS container7 */
+.footers {
+    margin-top: 50px;
+    background-color: rgb(249, 228, 231);
+    border-top: 2px solid rgb(253, 53, 86);
+}
+
+.footers .container7 {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.footers .container7 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.footers .container7 .grid .footer {
+    /* background-color: greenyellow; */
+    border-left: 2px solid rgb(244, 110, 133);
+}
+
+.footers .container7 .grid .footer1 {
+    grid-row: 1 / span 2;
+}
+
+.footers .container7 .grid .footer2 {
+    grid-row: 1 / span 2;
+}
+
+.footers .container7 .grid .footer3 {
+    grid-row: 1 / span 2;
+}
+.footers .container7 .grid .footer .title {
+    border-bottom: 2px solid rgb(244, 110, 133);
+    width: 90%;
+    padding: 10px;
+}
+.footers .container7 .grid .footer .nav_menu_footer .list_footer {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.footers .container7 .grid .footer .nav_menu_footer .list_footer li a {
+    transition: all 1s;
+}
+
+.footers .container7 .grid .footer .nav_menu_footer .list_footer li a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(247, 12, 51);
+    transition: all 1s;
+}
+
+.footers .container7 .grid .footer .nav_menu_footer .list_footer li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(252, 86, 113);
+}
+.footers .container7 .grid .footer5 .nav_menu_footer a {
+    color: rgb(255, 2, 120);
+    transition: all 1s;
+}
+
+.footers .container7 .grid .footer5 .nav_menu_footer a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(247, 12, 51);
+    transition: all 1s;
+}
+.footers .container7 .footer_text {
+    width: 80%;
+    display: inline;
+    margin: 0px auto;
+    margin-left: 204px;
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(252, 86, 113);
+}
+.footers .container7 .footer_text a {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(252, 86, 113);
+    text-decoration: none;
+    transition: all 1s;
+}
+.footers .container7 .footer_text a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(247, 12, 51);
+    transition: all 1s;
+}
+
+/*
+    Chỉnh giao diện Website để có thể chạy trên bất kỳ loại 
+    thiết bị nào cũng được(Canh theo chiều ngang, vì chiều dọc
+    có thể sinh scroll còn chiều ngang là cố định).
+
+    - desktop first: Ưu tiên loại người dùng máy tính hoặc laptop
+    - mobile first: Ưu tiên loại người dùng điện thoại hoặc máy tính bảng
+ */
+ 
+ /* Dùng AI viết */
+/* Large desktops (>= 1200px) */
+@media (max-width: 1200px) {
+  
+}
+
+/* Medium desktops / laptops (>= 992px) */
+@media (max-width: 992px) {
+  
+}
+
+/* Tablets (>= 768px) */
+@media (max-width: 768px) {
+    .menu_nav {
+    /* background: orange; */
+}
+
+.menu_nav .container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    margin: auto 120px;
+    background: rgb(228, 33, 65);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+}
+
+.menu_nav .container3 .list_item_nav {
+    width: 9000px;
+}
+
+.menu_nav .container3 .list_item_nav li {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 2px solid rgb(232, 156, 169);
+    padding: 0px 10px;
+    height: 40px;
+    
+    /*Để đường viền border bên phải kéo dài bằng với chiều rộng của background class="container3"*/
+}
+
+.menu_nav .container3 .list_item_nav li a {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(238, 151, 166);
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.menu_nav .container3 .list_item_nav li:hover {
+    background: rgb(152, 34, 54);
+    transition: all 1s;
+
+}
+
+/* CSS search_form */
+.menu_nav .container3 .search_form input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 5px;
+    border-color: white;
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(245, 45, 78);
+}
+
+.menu_nav .container3 .search_form input::placeholder {
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(251, 125, 146);
+    padding-left: 5px;
+}
+
+.menu_nav .container3 .search_form .fa-crosshairs {
+    position: relative;
+    right: 30px;
+    top: 2px;
+    color: rgb(251, 125, 146);
+}
+}
+
+/* Large phones (>= 576px) */
+@media (max-width: 576px) {
+  
+}
+
+/* Small phones (< 576px) */
+@media (max-width: 400px) {
+  
+}
