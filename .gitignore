@@ -1,4 +1,4 @@
 # Loại bỏ các file hoặc folder không muốn đưa lên git
 # VD
 /grid-system.html
-/position.html
+/position.html 
